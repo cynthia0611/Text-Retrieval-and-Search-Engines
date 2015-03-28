@@ -17,7 +17,6 @@ Consider the same scenario as in question (1) with the dot product as the simila
  
 Sim(Q,D1) = 6 	Sim(Q,D2) = 4			
 **Sim(Q,D1) = 6 	Sim(Q,D2) = 3**
-
 Sim(Q,D1) = 4 	Sim(Q,D2) = 3			
  
 
