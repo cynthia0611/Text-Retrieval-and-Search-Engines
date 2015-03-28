@@ -8,7 +8,7 @@ D2 = “In the future, online education will dominate.”
 Let V(X) = [c1 c2 c3 c4] represent a part of the term frequency vector for document or query X, where c1, c2, c3, and c4 are the term weights corresponding to “future”, “of”, “online”, and “education”, respectively. Which of the following is true:
  
 V(Q) = [1 1 1 1] 	V(D1) = [1 1 2 2] 	V(D2) = [1 1 1 1]			
-*V(Q) = [1 1 1 1] 	V(D1) = [1 1 2 2] 	V(D2) = [1 0 1 1]*	 	
+**V(Q) = [1 1 1 1] 	V(D1) = [1 1 2 2] 	V(D2) = [1 0 1 1]**	 	
 V(Q) = [1 1 1 1] 	V(D1) = [1 1 1 1] 	V(D2) = [1 0 1 1]			
  
 
@@ -16,7 +16,7 @@ V(Q) = [1 1 1 1] 	V(D1) = [1 1 1 1] 	V(D2) = [1 0 1 1]
 Consider the same scenario as in question (1) with the dot product as the similarity measure. Which of the following is the true:
  
 Sim(Q,D1) = 6 	Sim(Q,D2) = 4			
-*Sim(Q,D1) = 6 	Sim(Q,D2) = 3 *
+**Sim(Q,D1) = 6 	Sim(Q,D2) = 3 **
 Sim(Q,D1) = 4 	Sim(Q,D2) = 3			
  
 
