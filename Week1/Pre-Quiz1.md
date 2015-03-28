@@ -16,7 +16,7 @@ V(Q) = [1 1 1 1] 	V(D1) = [1 1 1 1] 	V(D2) = [1 0 1 1]
 Consider the same scenario as in question (1) with the dot product as the similarity measure. Which of the following is the true:
  
 Sim(Q,D1) = 6 	Sim(Q,D2) = 4			
-**Sim(Q,D1) = 6 	Sim(Q,D2) = 3**
+**Sim(Q,D1) = 6 	Sim(Q,D2) = 3** 
 Sim(Q,D1) = 4 	Sim(Q,D2) = 3			
  
 
