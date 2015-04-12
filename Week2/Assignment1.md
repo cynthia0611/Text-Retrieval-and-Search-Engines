@@ -43,9 +43,9 @@ cd ~/Desktop/meta/build/
 ./ranking-experiment config.toml task5
 
 ####Task 6: PL2
-```
 cd meta/src/index/tools/
 In ranking-experiment.cpp, insert the follwing codes:
+```
 double tfn = tf * log2(1 + c * avg_dl / doc_len);
 double par_result1 = tfn * log2(tfn / lambda);
 double par_result2 = (lambda + 1.0 / (12 * tfn) - tfn) * log2(exp(1));
@@ -54,7 +54,6 @@ double par_result = par_result1 + par_result2 + par_result3;
 double score = 1.0 / (tfn + 1) * par_result;
 return score;
 ```
-
 cd meta/build
 make
 Then, in config.toml, modify the following part:
@@ -71,8 +70,19 @@ lambda = 0.1
 cd meta/build/
 ./ranking-experiment config.toml task6
 
+####Task 7: Tuning PL2
+In ranking-experiment.cpp, modify the follwing codes:
+```
+maxmap = eval.map(); // Change 0 to the correct value
+cmax = cvalues[i]; // Change 0 to the correct value
+lambdamax = lambdavalues[j]; // Change 0 to the correct value
+```
+cd meta/build
+make
+./ranking-experiment config.toml task7
 
-
-
-
-
+####Task 8: Relevance Judgments
+```
+cd ~/Desktop/meta/build/
+./relevance-judgements config.toml
+```
