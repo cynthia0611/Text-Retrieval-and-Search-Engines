@@ -42,8 +42,32 @@ cd ~/Desktop/meta/build/
 
 ./ranking-experiment config.toml task5
 
+####Task 6: PL2
+cd meta/src/index/tools/
+In ranking-experiment.cpp, insert the follwing codes:
+double tfn = tf * log2(1 + c * avg_dl / doc_len);
+double par_result1 = tfn * log2(tfn / lambda);
+double par_result2 = (lambda + 1.0 / (12 * tfn) - tfn) * log2(exp(1));
+double par_result3 = 1.0 / 2 * log2(2 * pi * tfn);
+double par_result = par_result1 + par_result2 + par_result3;
+double score = 1.0 / (tfn + 1) * par_result;
+return score;
+Next, we do:
+cd meta/build
+make
+Then, in config.toml, modify the following part:
 
+[ranker]  
+#method = "bm25"  
+#k1 = 1.2  
+#b = 0.75  
+#k3 = 500  
+method = "pl2"  
+c = 7  
+lambda = 0.1  
 
+cd meta/build/
+./ranking-experiment config.toml task6
 
 
 
