@@ -37,5 +37,16 @@ cd ~/Desktop/meta/build/
 
 ./ranking-experiment config.toml task4
 
+####Task 5: BM25 with tuned parameters
+cd ~/Desktop/meta/build/
+
+./ranking-experiment config.toml task5
+
+
+
+
+
+
+
 
 
