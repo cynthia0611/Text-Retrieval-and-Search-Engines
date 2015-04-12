@@ -57,7 +57,8 @@ cd meta/build
 make
 Then, in config.toml, modify the following part:
 
-[ranker]  
+[ranker]
+```
 #method = "bm25"  
 #k1 = 1.2  
 #b = 0.75  
@@ -65,7 +66,7 @@ Then, in config.toml, modify the following part:
 method = "pl2"  
 c = 7  
 lambda = 0.1  
-
+```
 cd meta/build/
 ./ranking-experiment config.toml task6
 
