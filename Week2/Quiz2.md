@@ -10,7 +10,7 @@ What is the precision at 10 documents of both systems?
 Your Answer		Score	Explanation
 P(A) = 1/4 	P(B)= 2/4			
 P(A) = 9/10 	P(B)= 8/10			
-P(A) = 1/10 	P(B)= 2/10	Correct	1.00	
+`P(A) = 1/10 	P(B)= 2/10`		
 P(A) = 1/40 	P(B)= 2/40			
 
 #####Question 2
