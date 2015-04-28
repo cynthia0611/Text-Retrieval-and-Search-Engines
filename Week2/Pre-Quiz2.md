@@ -2,12 +2,15 @@
 
 ######Question 1
 ```
-Suppose a query has a total of 5 relevant documents in a collection of 100 documents. System A and System B have each retrieved 10 documents, and the relevance status of the ranked lists is shown below: 
+Suppose a query has a total of 5 relevant documents in a collection of 100 documents. 
+System A and System B have each retrieved 10 documents, 
+and the relevance status of the ranked lists is shown below: 
 
 	System A: [+ + - - - - - - - -]
 	System B: [- + - - + - - - - +]
 
-where the leftmost entry corresponds to the highest ranked document, and the rightmost entry corresponds to the lowest ranked document. 
+where the leftmost entry corresponds to the highest ranked document, 
+and the rightmost entry corresponds to the lowest ranked document. 
 A “+” indicates a relevant document and a “-” corresponds to a non-relevant one. 
 For example, the top ranked document retrieved by System A is relevant whereas the top ranked one by B is non-relevant. 
 ```
