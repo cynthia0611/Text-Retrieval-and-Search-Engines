@@ -39,4 +39,21 @@ AP(A) = 2/5 	AP(B) = 6/25
 AP(A) = 2/100 	AP(B) = 3/250			
 AP(A) = 3/10 	AP(B) = 9/20			
 AP(A) = 2/10 	AP(B) = 3/25
+
 The average precision is the sum of the precisions at each time a relevant document is retrieved divided by the total number of relevant documents. AP(A) = (1/1 + 2/2)/5 = 2/5 and AP(B) = (1/2 + 2/5 + 3/10)/5 = 6/25
+
+######Question 4
+```
+Let w1, w2, and w3 represent three words in the dictionary of an inverted index. Suppose we have the following document frequency distribution: 
+```
+Word	Document Frequency
+w1	1
+w2	5
+w3	10
+
+Assume that each posting entry of document ID and term frequency takes exactly the same disk space. Which word's postings list will occupy the largest disk space?
+
+w2			
+w3		
+w1
+> The postings list of w3 has the largest number of entries, and thus occupies the largest space.
