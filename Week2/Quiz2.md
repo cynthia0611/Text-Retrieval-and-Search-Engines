@@ -44,7 +44,7 @@ w2	100
 w3	10
 
 Assume that each posting entry of document ID and term frequency takes exactly the same disk space. Which word, if removed from the inverted index, will save the most disk space?
-Your Answer		Score	Explanation
+
 `w1`		
 w3			
 w2			
