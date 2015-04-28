@@ -60,10 +60,40 @@ w1
 > The postings list of w3 has the largest number of entries, and thus occupies the largest space.
 
 ######Question 5
-
-> Assume we have the same scenario as in Question 4. If we enter a query Q= “w1 w2 w3” then the maximum possible number of accumulators needed to score all the matching documents is:
-
+```
+Assume we have the same scenario as in Question 4. 
+If we enter a query Q= “w1 w2 w3” then the maximum possible number 
+of accumulators needed to score all the matching documents is:
+```
 1			
 16	
 10			
 5
+> If the three postings lists are mutually exclusive (have no common elements), then we will have 16 unique documents each matching exactly one of the query terms.
+
+######Question 6
+```
+Assume that d-gap between two documents is equal to 9. If you want to compress this d-gap with a gamma code, what will be the binary representation of the code?
+```
+1110000			
+1110001			
+1110010			
+1110011
+
+> 1+floor(log(9)) = 4 which can be represented as 1110 in unary code. 9 – 2^(floor(log(9))) = 1 which can be represented as 001 in a uniform code with 3 bits. The gamma code is the concatenation of the unary and uniform codes.
+
+######Question 7
+```
+Assume you have two retrieval systems X and Y. 
+If X has a higher MAP (mean average precision),
+can Y have a higher gMAP (geometric mean average precision)?
+```
+Yes		
+No
+> This is possible. For example, if both systems are being evaluated on two queries where the average precisions for system X are APx(Q1) = 0.9 and APX (Q2) = 0.01, and those for system Y are APY (Q1) = 0.2 and APY (Q2) = 0.2. Clearly, X has a higher MAP; MAPx = (0.9+0.01)/2 = 0.455 and MAPY = (0.2+0.2)/2 = 0.2 
+
+> Recall that the geometric mean of two values is the square root of their product. So gMAPx = sqrt(0.9*0.01) = 0.094 and gMAPY = sqrt(0.2*0.2) = 0.2. This illustrates an important property of gMAP: It is dominated by the low values of average precision, making it a good indicator of how the system performs in the presence of “hard” queries.
+
+
+
+
