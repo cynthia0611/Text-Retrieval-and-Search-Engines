@@ -40,11 +40,12 @@ AP(A) = 2/100 	AP(B) = 3/250
 AP(A) = 3/10 	AP(B) = 9/20			
 AP(A) = 2/10 	AP(B) = 3/25
 
-The average precision is the sum of the precisions at each time a relevant document is retrieved divided by the total number of relevant documents. AP(A) = (1/1 + 2/2)/5 = 2/5 and AP(B) = (1/2 + 2/5 + 3/10)/5 = 6/25
+> The average precision is the sum of the precisions at each time a relevant document is retrieved divided by the total number of relevant documents. AP(A) = (1/1 + 2/2)/5 = 2/5 and AP(B) = (1/2 + 2/5 + 3/10)/5 = 6/25
 
 ######Question 4
 ```
-Let w1, w2, and w3 represent three words in the dictionary of an inverted index. Suppose we have the following document frequency distribution: 
+Let w1, w2, and w3 represent three words in the dictionary of an inverted index. 
+Suppose we have the following document frequency distribution: 
 ```
 Word	Document Frequency
 w1	1
@@ -57,3 +58,12 @@ w2
 w3		
 w1
 > The postings list of w3 has the largest number of entries, and thus occupies the largest space.
+
+######Question 5
+
+> Assume we have the same scenario as in Question 4. If we enter a query Q= “w1 w2 w3” then the maximum possible number of accumulators needed to score all the matching documents is:
+
+1			
+16	
+10			
+5
