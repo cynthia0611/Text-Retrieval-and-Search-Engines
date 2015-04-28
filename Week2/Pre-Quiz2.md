@@ -7,7 +7,9 @@ Suppose a query has a total of 5 relevant documents in a collection of 100 docum
 	System A: [+ + - - - - - - - -]
 	System B: [- + - - + - - - - +]
 
-where the leftmost entry corresponds to the highest ranked document, and the rightmost entry corresponds to the lowest ranked document. A “+” indicates a relevant document and a “-” corresponds to a non-relevant one. For example, the top ranked document retrieved by System A is relevant whereas the top ranked one by B is non-relevant. 
+where the leftmost entry corresponds to the highest ranked document, and the rightmost entry corresponds to the lowest ranked document. 
+A “+” indicates a relevant document and a “-” corresponds to a non-relevant one. 
+For example, the top ranked document retrieved by System A is relevant whereas the top ranked one by B is non-relevant. 
 ```
 What is the precision at 10 documents of both systems?
 
