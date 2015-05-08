@@ -9,7 +9,7 @@ What is the probability of generating the phrase “text mining research” usin
 0			
 0.08		
 0.4			
-`######0.032`			
+`0.032`			
 
 > The probability of “research” is P(“research”) = 1 – ( P(“text”)+P(“mining”) ) = 1 – (0.4 + 0.2) = 0.4. The probability of generating the given phrase P(“text mining research”) = P(“text”) x P(“mining”) x P(“research”) = 0.4 x 0.2 x 0.4 = 0.032.
 
