@@ -48,7 +48,7 @@ education
 
 Based on the unigram query likelihood model, which of the following choices is correct?
 
-P(Q|D1) = 1/16       P(Q|D2) = 0	Inorrect	0.00	
+P(Q|D1) = 1/16       P(Q|D2) = 0		
 P(Q|D1) = 1/16       P(Q|D2) = 1/32			
 P(Q|D1) = 1/16       P(Q|D2) = 1/16			
 P(Q|D1) = 1/32       P(Q|D2) = 1/32			
