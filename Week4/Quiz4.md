@@ -2,7 +2,7 @@
 Which of the following is not true about GFS?
 
 The file data transfer happens directly between the GFS client and the GFS chunkservers.			
-######The file data transfer happens directly between the GFS client and the GFS master.	Correct	1.00	
+######The file data transfer happens directly between the GFS client and the GFS master.	
 The GFS keeps multiple replicas of the same file chunk.			
 
 
