@@ -12,7 +12,7 @@ the    computer science
 0.4    0.2      0.3
 
 What is the probability of generating the phrase “the technology” using this unigram language model?
-Your Answer		Score	Explanation
+
 0.04			
 0.5			
 0.1		
@@ -46,9 +46,8 @@ courses
 education
 1/8
 
-
 Based on the unigram query likelihood model, which of the following choices is correct?
-Your Answer		Score	Explanation
+
 P(Q|D1) = 1/16       P(Q|D2) = 0	Inorrect	0.00	
 P(Q|D1) = 1/16       P(Q|D2) = 1/32			
 P(Q|D1) = 1/16       P(Q|D2) = 1/16			
@@ -60,7 +59,6 @@ The BM25 has more free parameters to tune than the ranking function of the Diric
 
 True			
 ######False	
-
 
 #####Question 6
 Assume you are using Dirichlet Prior smoothing to estimate the probabilities of words in a certain document. What happens to the smoothed probability of the word when the parameter μ is increased?
@@ -94,7 +92,6 @@ q2 has strictly greater weights than q1
 q1 has strictly greater weights than q2			
 q1 can have greater or equal weights to q2			
 q2 can have greater or equal weights to q1			
-
 
 #####Question 10
 Which of the following is not true about the KL-divergence retrieval model?
